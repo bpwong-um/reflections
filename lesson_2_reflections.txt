@@ -1,10 +1,11 @@
-git branch; git branch [new branch]; git checkout [branch name]; git log --graph --oneline [branch1] [branch2]
+git branch; git branch [new branch]; git checkout [branch name]; git log --graph --oneline [branch1] [branch2]; git merge
 
 git checkout -b [new branch name] is equivalent to running two commands:
 $ git branch [new branch name]
 $ git checkout [new branch name]
 This is useful when you've modified a commit somewhere down the version history which would not
 show up in any of the current branches because it is unreachable by them.
+
 ================
 
 What happens when you initialize a repository? Why do you need to do it?
@@ -51,3 +52,11 @@ How do the diagrams help you visualize the branch structure?
 Diagrams allow me to visualize the branch structure by showing where the branches
 intersect with other branches (find a common parent node) and to see the reachability
 of each branch.
+
+================
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of merging two branches together is combining the changes made by both branches compared to the 
+parent commit.  This is represented in the diagram as a new commit that points back to both branches.  This
+allows us to reference the previous commits that were made from both branches prior to the merge.
