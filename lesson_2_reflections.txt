@@ -1,3 +1,12 @@
+git branch; git branch [new branch]; git checkout [branch name]; git log --graph --oneline [branch1] [branch2]
+
+git checkout -b [new branch name] is equivalent to running two commands:
+$ git branch [new branch name]
+$ git checkout [new branch name]
+This is useful when you've modified a commit somewhere down the version history which would not
+show up in any of the current branches because it is unreachable by them.
+================
+
 What happens when you initialize a repository? Why do you need to do it?
 
 This command creates an empty Git repository - basically a .git directory with subdirectories for objects,
@@ -34,3 +43,11 @@ version.  That way I can test out different features without any adverse effects
 
 Branches help by allowing me to work on different versions that are  independent of each other.
 If I made a change to one branch, the other branch(es) are unaffected.
+
+================
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams allow me to visualize the branch structure by showing where the branches
+intersect with other branches (find a common parent node) and to see the reachability
+of each branch.
