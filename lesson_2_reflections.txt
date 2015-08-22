@@ -22,3 +22,15 @@ How can you use the staging area to make sure you have one commit per logical ch
 You can use the staging area to add the file(s) to which the logical change was made.  
 That way, when the command "git commit" is called, only the file(s) to which the
 logical change was made to will be committed to the repository.
+
+================
+
+What are some situations when branches would be helpful in keeping your history 
+organized? How would branches help?
+
+Some situations where branches would help keep my history organized are when
+I create different versions of my code, but would like to maintain the original working
+version.  That way I can test out different features without any adverse effects.
+
+Branches help by allowing me to work on different versions that are  independent of each other.
+If I made a change to one branch, the other branch(es) are unaffected.
