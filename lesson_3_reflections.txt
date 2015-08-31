@@ -8,3 +8,18 @@ Why might you want to always pull changes manually rather than having Git automa
 
 Control.  The version on the local branch may have changes that do not appear on the remote repository and these could get overwritten
 if pull was done automatically.
+
+================
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forking is only done on GitHub repositories (and keeps track of info such as who forked the repo and how many people have forked the repo), whereas cloning can be performed on remote or local repos.  Branches allow different versions in the same repo, where are forking and cloning create copies of the repo.  
+
+Forks are used on GitHub to clone a repository while acknowledging the original author.
+
+Clones are used to crease a copy of a repository for local edition while not affecting the original.
+
+Branches are used to introduce a local copy within a repository while also keeping the original.  Branching allows for
+testing of new features, for example, without affecting the original, while also keeping the possibility of merging
+the branch with the master branch in the future.
+
